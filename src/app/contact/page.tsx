@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div>
           <dt>Visit</dt>
           <dd>
-            {site.address.street}, {site.address.city}
+            {site.address.location}, {site.address.city}
           </dd>
         </div>
         <div>

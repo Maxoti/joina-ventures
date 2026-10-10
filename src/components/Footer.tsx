@@ -36,7 +36,7 @@ export function Footer() {
             <li>
               <a href={`mailto:${site.email}`}>{site.email}</a>
             </li>
-            <li>{site.address.street}, {site.address.city}</li>
+            <li>{site.address.location}, {site.address.city}</li>
             <li>{site.hours}</li>
           </ul>
         </div>
