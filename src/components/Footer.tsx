@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { categories } from "@/lib/catalog";
 import { site, whatsappLink } from "@/lib/site";
-import { Mark } from "./Mark";
 
 export function Footer() {
   return (
@@ -9,8 +9,7 @@ export function Footer() {
       <div className="container footer-grid">
         <div>
           <Link href="/" className="brand" aria-label={`${site.name} home`}>
-            <Mark />
-            <span>Joina</span>
+            <Image src="/logo-white.png" alt={site.legalName} width={900} height={249} className="brand-logo footer-logo" />
           </Link>
           <p className="footer-note">{site.tagline}. Tell us what you need and we will send a quote.</p>
         </div>

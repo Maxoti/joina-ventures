@@ -90,6 +90,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .header-bar { display: flex; align-items: center; gap: 28px; min-height: 68px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; letter-spacing: -0.03em; text-decoration: none; }
+.brand-logo { height: 46px; width: auto; display: block; }
+.footer-logo { height: 54px; }
+@media (max-width: 480px) { .brand-logo { height: 38px; } }
 .nav-desktop { display: flex; gap: 26px; margin-left: auto; }
 .nav-desktop a { text-decoration: none; font-weight: 600; padding: 6px 0; border-bottom: 2px solid transparent; }
 .nav-desktop a:hover { border-bottom-color: var(--magenta); }

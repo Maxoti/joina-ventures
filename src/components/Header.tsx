@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
-import { Mark } from "./Mark";
 import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
@@ -8,8 +8,7 @@ export function Header() {
     <header className="site-header">
       <div className="container header-bar">
         <Link href="/" className="brand" aria-label={`${site.name} home`}>
-          <Mark />
-          <span>Joina</span>
+          <Image src="/logo.png" alt={site.legalName} width={900} height={249} priority className="brand-logo" />
         </Link>
         <nav aria-label="Main" className="nav-desktop">
           {nav.map((item) => (
