@@ -48,7 +48,7 @@ export function localBusinessLd() {
     email: site.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: site.address.street,
+      streetAddress: site.address.location,
       addressLocality: site.address.city,
       addressRegion: site.address.region,
       addressCountry: site.address.country,
