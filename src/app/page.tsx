@@ -58,8 +58,9 @@ export default function HomePage() {
             className="hero-image"
             src="/hero-services.webp"
             alt="Joina Ventures services: design for logos and branding, high quality printing on banners and t-shirts, and branded merchandise such as bags, caps, mugs and notebooks"
-            width={1508}
-            height={848}
+            width={2262}
+            height={1272}
+            quality={90}
             priority
             sizes="(max-width: 1180px) 100vw, 1180px"
           />

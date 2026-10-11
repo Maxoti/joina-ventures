@@ -59,8 +59,8 @@ export function HeroMotion() {
         loop
         playsInline
         preload="auto"
-        width={800}
-        height={800}
+        width={1200}
+        height={1200}
         poster="/hero-motion-poster.webp"
         aria-label="Joina Ventures branded t-shirts, mugs, banners and business cards"
       >
