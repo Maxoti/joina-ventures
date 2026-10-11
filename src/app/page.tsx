@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { categories, featuredSlugs, getProduct, productsIn, type Product } from "@/lib/catalog";
@@ -33,7 +34,7 @@ export default function HomePage() {
       />
 
       <section className="hero">
-        <div className="container hero-grid">
+        <div className="container">
           <div className="hero-copy">
             <h1>Your brand, printed properly.</h1>
             <p className="lede">
@@ -49,26 +50,15 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="proof" aria-hidden="true">
-            <div className="marks">
-              <i className="tl" />
-              <i className="tr" />
-              <i className="bl" />
-              <i className="br" />
-            </div>
-            <div className="discs">
-              <span className="disc c" />
-              <span className="disc m" />
-              <span className="disc y" />
-              <span className="disc-j">J</span>
-            </div>
-            <div className="bar">
-              <b className="ink-cyan" />
-              <b className="ink-magenta" />
-              <b className="ink-yellow" />
-              <b className="ink-key" />
-            </div>
-          </div>
+          <Image
+            className="hero-image"
+            src="/hero-services.webp"
+            alt="Joina Ventures services: design for logos and branding, high quality printing on banners and t-shirts, and branded merchandise such as bags, caps, mugs and notebooks"
+            width={1508}
+            height={848}
+            priority
+            sizes="(max-width: 1180px) 100vw, 1180px"
+          />
         </div>
       </section>
 

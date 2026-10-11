@@ -113,38 +113,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 480px) { .header-cta { display: none; } }
 
 /* ---------- Hero ---------- */
-.hero { padding: clamp(36px, 6vw, 84px) 0 clamp(40px, 6vw, 80px); background: var(--paper); border-bottom: 1px solid var(--line); }
-.hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
-.hero-copy h1 { max-width: 12ch; }
+.hero { padding: clamp(32px, 5vw, 64px) 0 clamp(36px, 5vw, 64px); background: var(--paper); border-bottom: 1px solid var(--line); }
+.hero-copy h1 { max-width: 16ch; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-
-.proof { position: relative; padding: 26px; width: 100%; max-width: 500px; justify-self: end; }
-.marks i { position: absolute; width: 20px; height: 20px; border: 0 solid var(--ink); }
-.marks .tl { top: 0; left: 0; border-top-width: 2px; border-left-width: 2px; }
-.marks .tr { top: 0; right: 0; border-top-width: 2px; border-right-width: 2px; }
-.marks .bl { bottom: 0; left: 0; border-bottom-width: 2px; border-left-width: 2px; }
-.marks .br { bottom: 0; right: 0; border-bottom-width: 2px; border-right-width: 2px; }
-.discs { position: relative; aspect-ratio: 1; background: #fff; border: 1px solid var(--line); overflow: hidden; isolation: isolate; }
-.disc { position: absolute; width: 62%; aspect-ratio: 1; border-radius: 50%; mix-blend-mode: multiply; animation: register 1.2s cubic-bezier(.2, .8, .2, 1) both; }
-.disc.c { left: 6%; top: 8%; background: var(--cyan); --dx: -16%; --dy: -12%; }
-.disc.m { left: 32%; top: 8%; background: var(--magenta); --dx: 16%; --dy: -8%; }
-.disc.y { left: 19%; top: 30%; background: var(--yellow); --dx: 0%; --dy: 18%; }
-.disc-j { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); font-family: var(--font-display); font-weight: 800; font-size: clamp(3rem, 9vw, 5.5rem); color: #fff; line-height: 1; }
-.bar { display: flex; height: 14px; margin-top: 14px; }
-.bar b { flex: 1; background: var(--sw, var(--ink)); }
-@keyframes register {
-  from { transform: translate(var(--dx), var(--dy)); }
-  to { transform: translate(0, 0); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .disc { animation: none; }
-  html { scroll-behavior: auto; }
-}
-@media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .proof { justify-self: center; max-width: 380px; }
-  .hero-copy h1 { max-width: 14ch; }
-}
+.hero-image { display: block; width: 100%; height: auto; margin-top: clamp(28px, 4vw, 48px); border-radius: 10px; border: 1px solid var(--line); background: #fff; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(48px, 7vw, 88px) 0; }
