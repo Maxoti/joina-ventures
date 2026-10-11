@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HeroMotion } from "@/components/HeroMotion";
 import { ProductCard } from "@/components/ProductCard";
 import { categories, featuredSlugs, getProduct, productsIn, type Product } from "@/lib/catalog";
 import { JsonLd, localBusinessLd, pageMetadata } from "@/lib/seo";
@@ -35,6 +36,7 @@ export default function HomePage() {
 
       <section className="hero">
         <div className="container">
+          <div className="hero-top">
           <div className="hero-copy">
             <h1>Your brand, printed properly.</h1>
             <p className="lede">
@@ -48,6 +50,8 @@ export default function HomePage() {
                 Browse products
               </Link>
             </div>
+          </div>
+          <HeroMotion />
           </div>
 
           <Image
