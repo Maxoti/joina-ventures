@@ -56,7 +56,7 @@ export default function HomePage() {
 
           <Image
             className="hero-image"
-            src="/joina-showcase.png"
+            src="/Design-Triangle.png"
             alt="Joina Ventures services: design for logos and branding, high quality printing on banners and t-shirts, and branded merchandise such as bags, caps, mugs and notebooks"
             width={2262}
             height={1272}
