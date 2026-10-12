@@ -9,6 +9,10 @@ export interface Category {
   slug: string;
   name: string;
   ink: Ink;
+  /** Path in /public used for the category hero, list thumbnails and product fallbacks. */
+  image: string;
+  /** Alt text for the category image. */
+  imageAlt: string;
   /** One line used in lists. */
   short: string;
   /** Opening paragraph on the category page. */
@@ -26,7 +30,10 @@ export interface Product {
   blurb: string;
   /** Optional starting price in KSh. Leave undefined to show "Request a quote". */
   from?: number;
-  /** Optional path in /public, e.g. "/products/mugs.webp". */
+  /**
+   * Optional path in /public, e.g. "/vibrant-uv-rotary-printing-showcase.png".
+   * When unset, the product falls back to its category image.
+   */
   image?: string;
 }
 
@@ -35,6 +42,8 @@ export const categories: Category[] = [
     slug: "dtf-printing",
     name: "No-cut DTF printing",
     ink: "cyan",
+    image: "/no-cut-dtf.png",
+    imageAlt: "No-cut DTF printing at the Joina Ventures workshop",
     short: "Full-colour designs on garments and bags, with no cutting or weeding.",
     intro:
       "Direct-to-film (DTF) printing puts full-colour artwork on a film that is heat-pressed straight onto fabric. There is no cutting or weeding, so fine detail, gradients and photos come out clean on cotton, blends and many bags and caps.",
@@ -52,6 +61,8 @@ export const categories: Category[] = [
     slug: "sublimation-printing",
     name: "Sublimation printing",
     ink: "magenta",
+    image: "/sublimation.png",
+    imageAlt: "Sublimation printing at the Joina Ventures workshop",
     short: "Dye that bonds with polyester and coated surfaces, so it never cracks or peels.",
     intro:
       "Sublimation turns your design into dye that bonds with polyester fabric and specially coated items. The print becomes part of the surface, which means photo-quality colour that does not crack, peel or fade in the wash.",
@@ -68,6 +79,8 @@ export const categories: Category[] = [
     slug: "custom-3d-t-shirts",
     name: "Teamwear and 3D t-shirts",
     ink: "yellow",
+    image: "/joina-ventures-3d-print-studio.png",
+    imageAlt: "3D all-over t-shirt printing at the Joina Ventures studio",
     short: "All-over printed t-shirts and jerseys for staff, clubs and campaigns.",
     intro:
       "All-over sublimated t-shirts let your design run across the whole garment: front, back and sleeves. They suit clubs, companies, riders, cyclists and campaign teams who want to be recognised from a distance.",
@@ -84,6 +97,8 @@ export const categories: Category[] = [
     slug: "uv-printing",
     name: "UV printing",
     ink: "cyan",
+    image: "/uv-printing.png",
+    imageAlt: "UV printing at the Joina Ventures workshop",
     short: "Sharp, durable prints straight onto bottles, glass, pens, diaries and gifts.",
     intro:
       "UV printing cures ink with ultraviolet light as it is printed, so you get crisp colour and a durable finish directly on the item. There is no sticker layer, which makes it ideal for rigid promotional items and premium corporate gifts.",
@@ -100,6 +115,8 @@ export const categories: Category[] = [
     slug: "large-format-printing",
     name: "Large format printing",
     ink: "magenta",
+    image: "/large-format.png",
+    imageAlt: "Large format banner printing at the Joina Ventures workshop",
     short: "Banners, backdrops, tents, window graphics and print-and-cut stickers.",
     intro:
       "Large format printing covers everything from roll-up and X-stand banners to event backdrops, branded gazebo tents and window graphics. It is built for exhibitions, storefronts and events where you need to be seen from far away.",
@@ -116,6 +133,8 @@ export const categories: Category[] = [
     slug: "flag-printing",
     name: "Flag printing",
     ink: "yellow",
+    image: "/kenyan-flag-printing-workshop.png",
+    imageAlt: "Flag printing at the Joina Ventures workshop",
     short: "Teardrop, pin, telescopic and tension flags that catch attention outdoors.",
     intro:
       "Flags and flag banners work hard outdoors and at events. Choose a style and size, send your artwork and we will print and finish it ready to mount on its stand.",
@@ -131,6 +150,8 @@ export const categories: Category[] = [
     slug: "laser-engraving",
     name: "Laser engraving",
     ink: "cyan",
+    image: "/lasereng.png",
+    imageAlt: "Laser engraving at the Joina Ventures workshop",
     short: "Permanent, precise marks on wood, leather, acrylic, metal and glass.",
     intro:
       "Laser engraving etches a design into the material itself, so it lasts far longer than a printed finish. It gives a premium, personal feel to trophies, pens, notebooks, leather goods and key holders.",
@@ -146,6 +167,8 @@ export const categories: Category[] = [
     slug: "heat-transfer-printing",
     name: "Heat transfer printing",
     ink: "magenta",
+    image: "/heat-transfer.png",
+    imageAlt: "Heat transfer printing at the Joina Ventures workshop",
     short: "A fast way to put full-colour designs on mugs, apparel and bottles.",
     intro:
       "Heat transfer printing uses heat and pressure to bond a design to the item. It is quick and reliable for small and mid-sized custom orders, and a good fit when you need a one-off gift or a short run.",
@@ -231,6 +254,17 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
   ],
 };
 
+/**
+ * Product-level image overrides, keyed by product slug.
+ * Anything not listed here falls back to its category image.
+ */
+const productImages: Record<string, string> = {
+  "water-bottle-uv-printing": "/vibrant-uv-rotary-printing-showcase.png",
+  "glass-uv-printing": "/vibrant-uv-rotary-printing-showcase.png",
+  "trophy-laser-engraving": "/precision-cnc-engraving-in-action.png",
+  "leather-laser-engraving": "/precision-cnc-engraving-in-action.png",
+};
+
 export function slugify(input: string): string {
   return input
     .toLowerCase()
@@ -240,7 +274,10 @@ export function slugify(input: string): string {
 }
 
 export const products: Product[] = Object.entries(rawProducts).flatMap(([categorySlug, items]) =>
-  items.map(([name, blurb]) => ({ slug: slugify(name), name, categorySlug, blurb })),
+  items.map(([name, blurb]) => {
+    const slug = slugify(name);
+    return { slug, name, categorySlug, blurb, image: productImages[slug] };
+  }),
 );
 
 export const getCategory = (slug: string) => categories.find((c) => c.slug === slug);

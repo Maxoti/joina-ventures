@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductCard } from "@/components/ProductCard";
@@ -16,7 +17,20 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { slug } = await params;
   const category = getCategory(slug);
   if (!category) return {};
-  return pageMetadata({ title: category.seoTitle, description: category.seoDescription, path: `/services/${slug}` });
+
+  const base = pageMetadata({
+    title: category.seoTitle,
+    description: category.seoDescription,
+    path: `/services/${slug}`,
+  });
+
+  // Give shared links (WhatsApp, Facebook, X) a real preview image.
+  const ogImage = { url: absoluteUrl(category.image), alt: category.imageAlt };
+  return {
+    ...base,
+    openGraph: { ...base.openGraph, images: [ogImage] },
+    twitter: { ...base.twitter, images: [ogImage.url] },
+  };
 }
 
 export default async function ServicePage({ params }: { params: Promise<Params> }) {
@@ -43,6 +57,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
           name: category.name,
           description: category.seoDescription,
           url: absoluteUrl(path),
+          image: absoluteUrl(category.image),
           areaServed: "Kenya",
           provider: { "@id": absoluteUrl("/#business") },
         }}
@@ -66,11 +81,22 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
       </nav>
 
       <header className={`service-hero ink-${category.ink}`}>
-        <h1>{category.name} in Nairobi</h1>
-        <p className="lede">{category.intro}</p>
-        <Link href={`/quote`} className="btn dark">
-          Get a quote
-        </Link>
+        <div className="service-hero-copy">
+          <h1>{category.name} in Nairobi</h1>
+          <p className="lede">{category.intro}</p>
+          <Link href={`/quote`} className="btn dark">
+            Get a quote
+          </Link>
+        </div>
+        <div className="service-hero-media">
+          <Image
+            src={category.image}
+            alt={category.imageAlt}
+            fill
+            priority
+            sizes="(max-width: 900px) 100vw, 540px"
+          />
+        </div>
       </header>
 
       <section className="section tight" aria-labelledby="best-h">

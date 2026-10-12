@@ -2,18 +2,20 @@ import Image from "next/image";
 import { getCategory, type Product } from "@/lib/catalog";
 
 /**
- * Shows the product photo when `image` is set, otherwise a colour-coded
- * placeholder tile (halftone dots in the category's ink colour).
+ * Shows the product's own image if set, otherwise its category image,
+ * otherwise a colour-coded placeholder tile (halftone dots in the
+ * category's ink colour).
  */
 export function ProductVisual({ product, priority = false }: { product: Product; priority?: boolean }) {
   const category = getCategory(product.categorySlug);
   const ink = category?.ink ?? "cyan";
+  const src = product.image ?? category?.image;
 
-  if (product.image) {
+  if (src) {
     return (
       <div className="pv pv-photo">
         <Image
-          src={product.image}
+          src={src}
           alt={`${product.name} by Joina Ventures`}
           fill
           sizes="(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 280px"

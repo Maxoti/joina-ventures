@@ -37,26 +37,26 @@ export default function HomePage() {
       <section className="hero">
         <div className="container">
           <div className="hero-top">
-          <div className="hero-copy">
-            <h1>Your brand, printed properly.</h1>
-            <p className="lede">
-              T-shirts, banners, flags, mugs, awards and branded gifts. Tell us what you need and we will send a quote on WhatsApp.
-            </p>
-            <div className="hero-cta">
-              <Link href="/quote" className="btn primary">
-                Get a quote
-              </Link>
-              <Link href="/products" className="btn ghost">
-                Browse products
-              </Link>
+            <div className="hero-copy">
+              <h1>Your brand, printed properly.</h1>
+              <p className="lede">
+                T-shirts, banners, flags, mugs, awards and branded gifts. Tell us what you need and we will send a quote on WhatsApp.
+              </p>
+              <div className="hero-cta">
+                <Link href="/quote" className="btn primary">
+                  Get a quote
+                </Link>
+                <Link href="/products" className="btn ghost">
+                  Browse products
+                </Link>
+              </div>
             </div>
-          </div>
-          <HeroMotion />
+            <HeroMotion />
           </div>
 
           <Image
             className="hero-image"
-            src="/JOINA-Showcase.png"
+            src="/joina-showcase.png"
             alt="Joina Ventures services: design for logos and branding, high quality printing on banners and t-shirts, and branded merchandise such as bags, caps, mugs and notebooks"
             width={2262}
             height={1272}
@@ -77,6 +77,15 @@ export default function HomePage() {
               <li key={c.slug} className={`service-row ink-${c.ink}`}>
                 <Link href={`/services/${c.slug}`}>
                   <span className="swatch" aria-hidden="true" />
+                  {/* Decorative: the service name beside it already describes the row. */}
+                  <Image
+                    className="service-thumb"
+                    src={c.image}
+                    alt=""
+                    width={120}
+                    height={90}
+                    sizes="120px"
+                  />
                   <span className="service-name">{c.name}</span>
                   <span className="service-short">{c.short}</span>
                   <span className="service-count">{productsIn(c.slug).length} products</span>
