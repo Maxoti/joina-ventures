@@ -530,6 +530,13 @@ const productImages: Record<string, string> = {
   "t-shirt-dtf-printing":      "/Tshirt.png",
   "tote-bag-dtf-printing":     "/Totebag.png",
   "reflector-jacket-dtf-printing": "/Reflector_dtf.png",
+
+   // New
+  "kenha-jacket-dtf-printing":     "/kenha_jacket.png",
+  "teardrop-flag-printing":        "/smart_teardropflag.png",
+  "mug-sublimation-printing":      "/coke_mug.png",
+  "branded-t-shirt-printing":      "/Coke_T-Shirt.png",
+
 };
 
 export function slugify(input: string): string {
