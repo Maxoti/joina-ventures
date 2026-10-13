@@ -538,7 +538,19 @@ const productImages: Record<string, string> = {
   "reflector-jacket-sublimation":   "/kenha_jacket.png",
   "kenyan-flag-sublimation":             "/kenyan_flag.png",
 
+    // Flags
+  "teardrop-flags":                "/smart_teardropflag.png",
+  "custom-flags":                  "/kenyan_flag.png",
 
+// large format
+
+ "gazebo-tent-printing":          "/coca-cola-promotional-gazebo-showcase.png",
+  "adjustable-backdrop-banners":   "/creativeprints-adjustable-banner-display.png",
+  "roll-up-banners":               "/nexora-roll-up-banner-in-modern-office.png",
+  "x-stand-banners":               "/x-banner.png",
+  "door-frame-stand-banners":      "/modern-kensure-solutions-lobby-banner.png",
+  "l-banner-stands":               "/skyline-properties-lobby-banner.png",
+  "window-graphics":               "/technova-modern-storefront-wrap.png",
 };
 
 export function slugify(input: string): string {
