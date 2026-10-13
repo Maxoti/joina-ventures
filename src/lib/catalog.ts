@@ -523,6 +523,13 @@ const productImages: Record<string, string> = {
   "glass-uv-printing": "/vibrant-uv-rotary-printing-showcase.png",
   "trophy-laser-engraving": "/precision-cnc-engraving-in-action.png",
   "leather-laser-engraving": "/precision-cnc-engraving-in-action.png",
+
+    "hoodie-dtf-printing":       "/Hoodie_dtf.png",
+    "cap-dtf-printing":          "/Cap_dtf.png",
+  "jute-bag-dtf-printing":     "/Jute_dtf.png",
+  "t-shirt-dtf-printing":      "/Tshirt.png",
+  "tote-bag-dtf-printing":     "/Totebag.png",
+  "reflector-jacket-dtf-printing": "/Reflector_dtf.png",
 };
 
 export function slugify(input: string): string {
