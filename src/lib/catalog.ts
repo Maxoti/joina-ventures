@@ -42,7 +42,7 @@ export const categories: Category[] = [
     slug: "dtf-printing",
     name: "No-cut DTF printing",
     ink: "cyan",
-    image: "/no-cut-dtf.png",
+    image: "/dtf.png",
     imageAlt: "No-cut DTF printing at the Joina Ventures workshop",
     short: "Full-colour designs on garments and bags, with no cutting or weeding.",
     intro:
@@ -180,6 +180,213 @@ export const categories: Category[] = [
       { q: "How fast can a small order be ready?", a: "It depends on the item and quantity. Tell us your deadline when you request the quote." },
     ],
   },
+  {
+    slug: "graphic-design",
+    name: "Graphic design",
+    ink: "yellow",
+    image: "/vibrant-graphic-design-studio-workspace.png",
+    imageAlt: "Graphic design studio workspace at Joina Ventures",
+    short: "Logos, branding and print-ready artwork, from a rough idea to a finished file.",
+    intro:
+      "Good print starts with good artwork. Our design service turns a rough idea, a sketch or an old logo into clean, print-ready files, so what you approve on screen is what comes off the machine.",
+    bestFor: ["New business logos", "Brand refreshes", "Event and campaign artwork", "Fixing low-quality logos for print"],
+    seoTitle: "Graphic design and logo design in Nairobi, Kenya",
+    seoDescription:
+      "Logo design, branding and print-ready artwork in Nairobi. Share your idea on WhatsApp and get a design quote from Joina Ventures.",
+    faqs: [
+      { q: "Can you redraw my old logo?", a: "Yes. Send what you have, even a photo, and we can rebuild it as a clean file for printing." },
+      { q: "Do I get the design files?", a: "Ask when you request the quote and we will confirm what is included." },
+    ],
+  },
+  {
+    slug: "digital-printing",
+    name: "Digital printing",
+    ink: "cyan",
+    image: "/digital-printing-services.png",
+    imageAlt: "Digital printing services at Joina Ventures",
+    short: "Fast, sharp prints for flyers, brochures, cards and short-run stationery.",
+    intro:
+      "Digital printing is the quick route for short and mid-sized runs. There is no plate setup, so flyers, brochures, cards and stationery can be turned around fast with consistent colour.",
+    bestFor: ["Flyers and leaflets", "Business cards", "Brochures and menus", "Short-run stationery"],
+    seoTitle: "Digital printing in Nairobi, Kenya",
+    seoDescription:
+      "Digital printing of flyers, brochures, business cards and stationery in Nairobi. Fast turnaround on short runs. Request a quote.",
+    faqs: [
+      { q: "Is digital printing good for small quantities?", a: "Yes. It suits short runs without the setup cost of offset printing." },
+      { q: "What file should I send?", a: "A print-ready PDF is best. If you only have an idea, we can design it for you." },
+    ],
+  },
+  {
+    slug: "offset-printing",
+    name: "Offset printing",
+    ink: "magenta",
+    image: "/modern-offset-lithography-pressroom.png",
+    imageAlt: "Offset lithography press room",
+    short: "Large print runs of brochures, books, calendars and stationery at a lower unit cost.",
+    intro:
+      "Offset printing uses plates and a press to deliver consistent, high-quality results on large runs. The more you print, the lower the cost per piece, which makes it the sensible choice for bulk jobs.",
+    bestFor: ["Large brochure runs", "Calendars and diaries", "Receipt and invoice books", "Books and booklets"],
+    seoTitle: "Offset printing in Nairobi, Kenya",
+    seoDescription:
+      "Offset printing for brochures, calendars, books and stationery in bulk in Nairobi. Lower cost per piece on large runs. Request a quote.",
+    faqs: [
+      { q: "When should I choose offset over digital?", a: "For large quantities. Offset costs more to set up but is cheaper per piece as numbers grow." },
+    ],
+  },
+  {
+    slug: "screen-printing",
+    name: "Screen printing",
+    ink: "yellow",
+    image: "/screen-printing-workshop.png",
+    imageAlt: "Screen printing workshop at Joina Ventures",
+    short: "Bold, hard-wearing prints on t-shirts and bags, best for bigger batches.",
+    intro:
+      "Screen printing pushes ink through a mesh stencil to give bold, durable colour. It works best for simple designs in a few colours on larger batches of garments and bags.",
+    bestFor: ["Bulk t-shirt orders", "Uniforms", "Tote bags", "Simple one to three colour logos"],
+    seoTitle: "Screen printing in Nairobi, Kenya",
+    seoDescription:
+      "Screen printing on t-shirts, uniforms and bags in Nairobi. Bold, durable prints for bulk orders. Send your design and request a quote.",
+    faqs: [
+      { q: "Is screen printing good for photos?", a: "Not usually. Photos and gradients suit DTF or sublimation better. Screen printing shines on simple logos." },
+    ],
+  },
+  {
+    slug: "embroidery",
+    name: "Embroidery",
+    ink: "cyan",
+    image: "/summit-outdoor-gear-embroidery-machine.png",
+    imageAlt: "Embroidery machine stitching a logo",
+    short: "Stitched logos on polos, caps, jackets and uniforms for a premium finish.",
+    intro:
+      "Embroidery stitches your logo into the fabric, giving a raised, premium look that lasts. It is a favourite for corporate polos, caps, jackets and uniforms.",
+    bestFor: ["Corporate polo shirts", "Caps", "Jackets and uniforms", "School and security wear"],
+    seoTitle: "Embroidery services in Nairobi, Kenya",
+    seoDescription:
+      "Logo embroidery on polo shirts, caps, jackets and uniforms in Nairobi. A durable, premium finish. Request a quote.",
+    faqs: [
+      { q: "Can any logo be embroidered?", a: "Most can, but very fine detail may need simplifying. We will advise when you send the artwork." },
+      { q: "Can you embroider items I supply?", a: "Often yes. Send a photo of the item so we can confirm." },
+    ],
+  },
+  {
+    slug: "vinyl-stickers",
+    name: "Vinyl stickers",
+    ink: "magenta",
+    image: "/vibrant-vinyl-sticker-printing-workshop.png",
+    imageAlt: "Vinyl sticker printing workshop",
+    short: "Custom die-cut and print-and-cut stickers for branding, packaging and vehicles.",
+    intro:
+      "Printed vinyl stickers are cut to shape and ready to stick. They suit product labels, packaging, laptops, windows and vehicles, in any size and quantity.",
+    bestFor: ["Product labels", "Packaging", "Vehicle branding", "Giveaway stickers"],
+    seoTitle: "Custom vinyl stickers in Nairobi, Kenya",
+    seoDescription:
+      "Custom vinyl stickers, die-cut and print-and-cut, for labels, packaging and vehicles in Nairobi. Request a quote.",
+    faqs: [
+      { q: "Can stickers be cut to any shape?", a: "Yes. Send your design and we will cut around it." },
+    ],
+  },
+  {
+    slug: "uv-dtf-stickers",
+    name: "UV DTF stickers",
+    ink: "yellow",
+    image: "/uv-dtf-sticker-printing-studio.png",
+    imageAlt: "UV DTF sticker printing studio",
+    short: "Hard-wearing transfer stickers that press onto glass, metal, plastic and more.",
+    intro:
+      "UV DTF prints a durable, glossy transfer that you peel and stick onto rigid items. It gives a printed look on surfaces such as bottles, glass, metal and plastic without needing a printer for each item.",
+    bestFor: ["Bottles and tumblers", "Glass and acrylic", "Metal and plastic items", "Branding items you supply"],
+    seoTitle: "UV DTF stickers in Nairobi, Kenya",
+    seoDescription:
+      "UV DTF transfer stickers for bottles, glass, metal and plastic in Nairobi. Durable, glossy branding. Request a quote.",
+    faqs: [
+      { q: "How is UV DTF different from vinyl stickers?", a: "UV DTF transfers are thin, tough and glossy, and sit like a print on the item rather than a visible sticker." },
+    ],
+  },
+  {
+    slug: "uv-rotary-printing",
+    name: "UV rotary printing",
+    ink: "cyan",
+    image: "/vibrant-uv-rotary-printing-showcase.png",
+    imageAlt: "UV rotary printing on round items",
+    short: "Wrap-around prints directly on round items such as bottles, tumblers and cups.",
+    intro:
+      "A rotary UV printer turns the item as it prints, so artwork wraps cleanly around cylindrical and tapered objects. It is the neat way to brand bottles, tumblers and cups.",
+    bestFor: ["Water bottles", "Tumblers and mugs", "Cups and cylinders", "Corporate drinkware"],
+    seoTitle: "UV rotary printing in Nairobi, Kenya",
+    seoDescription:
+      "UV rotary printing on bottles, tumblers and cups in Nairobi. Seamless wrap-around prints. Request a quote.",
+    faqs: [
+      { q: "Can you print all the way round?", a: "Yes, rotary printing is designed for wrap-around artwork on round items." },
+    ],
+  },
+  {
+    slug: "doming",
+    name: "Doming",
+    ink: "magenta",
+    image: "/sprite-doming-services-workshop.png",
+    imageAlt: "Doming services workshop",
+    short: "Glossy, raised resin domes over stickers and badges for a premium 3D look.",
+    intro:
+      "Doming adds a clear, raised resin layer over a printed sticker or badge. The result is glossy, protected and eye-catching, ideal for logos on products, electronics and promotional items.",
+    bestFor: ["Product logo badges", "Premium stickers", "Key tags", "Branding on devices and gear"],
+    seoTitle: "Doming and resin stickers in Nairobi, Kenya",
+    seoDescription:
+      "Doming and resin dome stickers and badges in Nairobi. A glossy, durable 3D finish for your logo. Request a quote.",
+    faqs: [
+      { q: "What does doming protect against?", a: "The clear layer protects the print from scratches and everyday wear." },
+    ],
+  },
+  {
+    slug: "cnc-engraving",
+    name: "CNC engraving",
+    ink: "yellow",
+    image: "/precision-cnc-engraving-in-action.png",
+    imageAlt: "CNC engraving machine at work",
+    short: "Precise cutting and carving in wood, acrylic and other sheet materials.",
+    intro:
+      "CNC engraving cuts and carves materials with a machine-controlled tool. It handles signage, name plates, wooden lettering and decorative panels where laser engraving is not the right fit.",
+    bestFor: ["Signage", "Wooden and acrylic lettering", "Name plates", "Decorative panels"],
+    seoTitle: "CNC engraving and cutting in Nairobi, Kenya",
+    seoDescription:
+      "CNC engraving and cutting on wood, acrylic and sheet materials for signage and name plates in Nairobi. Request a quote.",
+    faqs: [
+      { q: "When is CNC better than laser engraving?", a: "For deeper carving, cutting out shapes and thicker materials. Tell us the job and we will recommend one." },
+    ],
+  },
+  {
+    slug: "id-card-printing",
+    name: "ID card printing",
+    ink: "cyan",
+    image: "/professional-id-card-printing-workspace.png",
+    imageAlt: "ID card printing workspace",
+    short: "Durable PVC ID cards with photos and details, plus lanyards and holders.",
+    intro:
+      "Professional PVC ID cards for staff, students and members. We print your design with photos and details, and can supply lanyards and card holders to go with them.",
+    bestFor: ["Staff ID cards", "Student and member cards", "Event passes", "Lanyards and holders"],
+    seoTitle: "ID card printing in Nairobi, Kenya",
+    seoDescription:
+      "PVC ID card printing for staff, students and events in Nairobi, with lanyards and holders. Request a quote.",
+    faqs: [
+      { q: "How do I send the details for many cards?", a: "Send a spreadsheet of names and details with photos, and we will confirm before printing." },
+    ],
+  },
+  {
+    slug: "asset-tagging",
+    name: "Asset tagging",
+    ink: "magenta",
+    image: "/professional-asset-tagging-workspace.png",
+    imageAlt: "Asset tag and label printing workspace",
+    short: "Numbered asset tags and barcode or QR labels to track equipment.",
+    intro:
+      "Durable asset tags and labels let you track equipment across offices, schools and sites. We can print serial numbers, barcodes and QR codes on tough, long-lasting material.",
+    bestFor: ["Office equipment", "Schools and hospitals", "Warehouses", "Barcode and QR labels"],
+    seoTitle: "Asset tagging and labels in Nairobi, Kenya",
+    seoDescription:
+      "Numbered asset tags and barcode or QR labels for equipment tracking in Nairobi. Durable and tamper-resistant options. Request a quote.",
+    faqs: [
+      { q: "Can tags be numbered in sequence?", a: "Yes. Send the starting number and quantity, and add your logo if you like." },
+    ],
+  },
 ];
 
 const rawProducts: Record<string, [name: string, blurb: string][]> = {
@@ -251,6 +458,59 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
     ["Heat-pressed mugs", "Full-colour mugs for one-off gifts and short runs."],
     ["Heat-pressed apparel", "Quick custom apparel for small orders."],
     ["Heat-pressed bottles", "Custom bottles for staff and events."],
+  ],
+  "graphic-design": [
+    ["Logo design", "A clean, memorable logo ready for print and screen."],
+    ["Brand identity design", "Logo, colours and layouts that keep your brand consistent."],
+    ["Print-ready artwork setup", "We prepare your artwork so it prints correctly first time."],
+  ],
+  "digital-printing": [
+    ["Flyers and leaflets", "Sharp full-colour flyers for promotions and events."],
+    ["Brochures", "Folded and stapled brochures for products and services."],
+    ["Business cards", "Professional cards on quality stock."],
+  ],
+  "offset-printing": [
+    ["Offset printed brochures", "Large brochure runs at a lower cost per piece."],
+    ["Calendars", "Wall and desk calendars printed in bulk."],
+    ["Receipt and invoice books", "Numbered, carbonless books for your business."],
+  ],
+  "screen-printing": [
+    ["Screen printed t-shirts", "Bold, hard-wearing logo prints for bulk orders."],
+    ["Screen printed tote bags", "Simple branded totes in larger batches."],
+  ],
+  "embroidery": [
+    ["Embroidered polo shirts", "Stitched logos on corporate polos."],
+    ["Embroidered caps", "Neat embroidered branding on caps."],
+    ["Embroidered uniforms", "Staff, school and security uniforms with stitched logos."],
+  ],
+  "vinyl-stickers": [
+    ["Custom vinyl stickers", "Printed stickers in any shape and size."],
+    ["Die-cut vinyl stickers", "Stickers cut precisely around your design."],
+  ],
+  "uv-dtf-stickers": [
+    ["UV DTF transfer stickers", "Tough, glossy transfers for rigid surfaces."],
+    ["UV DTF stickers for bottles and glass", "Durable branding for drinkware and glass items."],
+  ],
+  "uv-rotary-printing": [
+    ["Rotary UV printing on bottles", "Wrap-around prints on water bottles."],
+    ["Rotary UV printing on tumblers", "Full-colour branding on tumblers and cups."],
+  ],
+  "doming": [
+    ["Doming stickers", "Clear raised resin over printed stickers."],
+    ["Domed logo badges", "Premium 3D logo badges for products and gear."],
+  ],
+  "cnc-engraving": [
+    ["CNC wood engraving", "Carved lettering and designs in wood."],
+    ["CNC acrylic engraving", "Precise cutting and engraving on acrylic."],
+    ["CNC signage and name plates", "Custom signs and name plates for offices and homes."],
+  ],
+  "id-card-printing": [
+    ["PVC ID cards", "Durable ID cards with photos and details."],
+    ["Lanyards and card holders", "Lanyards and holders to go with your ID cards."],
+  ],
+  "asset-tagging": [
+    ["Asset tags", "Numbered tags to track your equipment."],
+    ["Barcode and QR labels", "Scannable labels printed on durable material."],
   ],
 };
 

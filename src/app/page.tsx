@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HeroMotion } from "@/components/HeroMotion";
 import { ProductCard } from "@/components/ProductCard";
+import { ServiceList } from "@/components/ServiceList";
 import { categories, featuredSlugs, getProduct, productsIn, type Product } from "@/lib/catalog";
 import { JsonLd, localBusinessLd, pageMetadata } from "@/lib/seo";
 import { absoluteUrl, site } from "@/lib/site";
@@ -72,27 +73,16 @@ export default function HomePage() {
           <h2 id="services-h" className="section-title">
             What we print and make
           </h2>
-          <ul className="service-list">
-            {categories.map((c) => (
-              <li key={c.slug} className={`service-row ink-${c.ink}`}>
-                <Link href={`/services/${c.slug}`}>
-                  <span className="swatch" aria-hidden="true" />
-                  {/* Decorative: the service name beside it already describes the row. */}
-                  <Image
-                    className="service-thumb"
-                    src={c.image}
-                    alt=""
-                    width={120}
-                    height={90}
-                    sizes="120px"
-                  />
-                  <span className="service-name">{c.name}</span>
-                  <span className="service-short">{c.short}</span>
-                  <span className="service-count">{productsIn(c.slug).length} products</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <ServiceList
+            items={categories.map((c) => ({
+              slug: c.slug,
+              name: c.name,
+              short: c.short,
+              image: c.image,
+              ink: c.ink,
+              count: productsIn(c.slug).length,
+            }))}
+          />
         </div>
       </section>
 

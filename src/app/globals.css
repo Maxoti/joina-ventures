@@ -275,3 +275,26 @@ input[type="radio"] { width: 18px; height: 18px; accent-color: var(--magenta); }
   background: var(--wa); color: #fff; border-radius: 50%; box-shadow: 0 4px 14px rgba(27,23,64,.3);
 }
 .wa-fab:hover { background: #0b6535; }
+
+/* ---------- Services pager ---------- */
+.service-list [hidden] { display: none !important; }
+
+.pager {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 8px; margin-top: 28px;
+}
+.pager-step, .pager-num {
+  min-height: 46px; padding: 0 18px;
+  border: 2px solid var(--ink); border-radius: var(--radius);
+  background: transparent; color: var(--ink);
+  font: inherit; font-weight: 700; cursor: pointer;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+.pager-num { min-width: 46px; padding: 0; }
+.pager-step:hover:not(:disabled), .pager-num:hover { background: var(--ink); color: #fff; }
+.pager-num[aria-current="page"] { background: var(--magenta); border-color: var(--magenta); color: #fff; }
+.pager-step:disabled { opacity: .4; cursor: not-allowed; }
+@media (max-width: 480px) {
+  .pager { gap: 6px; }
+  .pager-step { padding: 0 12px; }
+}
