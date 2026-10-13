@@ -531,11 +531,10 @@ const productImages: Record<string, string> = {
   "tote-bag-dtf-printing":     "/Totebag.png",
   "reflector-jacket-dtf-printing": "/Reflector_dtf.png",
 
-   // New
-  "kenha-jacket-dtf-printing":     "/kenha_jacket.png",
-  "teardrop-flag-printing":        "/smart_teardropflag.png",
-  "mug-sublimation-printing":      "/coke_mug.png",
-  "branded-t-shirt-printing":      "/Coke_T-Shirt.png",
+  // Sublimation
+  "mug-sublimation":                "/coke_mug.png",
+  "t-shirt-sublimation":            "/Coke_T-Shirt.png",
+  "reflector-jacket-sublimation":   "/kenha_jacket.png",
 
 };
 
