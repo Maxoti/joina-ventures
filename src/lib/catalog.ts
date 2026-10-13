@@ -551,6 +551,15 @@ const productImages: Record<string, string> = {
   "door-frame-stand-banners":      "/modern-kensure-solutions-lobby-banner.png",
   "l-banner-stands":               "/skyline-properties-lobby-banner.png",
   "window-graphics":               "/technova-modern-storefront-wrap.png",
+
+  // Custom 3D T-shirts
+  "custom-3d-sublimation-t-shirts": "/custom-sublimation-t-shirt.png",
+  "biker-club-t-shirts":            "/biker-club-t-shirt.png",
+  "mandarin-collar-t-shirts":       "/custom-chinese-collar-dragon-tee-mockup.png",
+  "cycling-jerseys":                "/dynamic-cycling-jersey-mockup-views-1.png",
+  "staff-t-shirts":                 "/custom-blue-team-vision-jersey-mockup.png",
+  "dance-shirts":              "/vibrant-dance.png",
+
 };
 
 export function slugify(input: string): string {
