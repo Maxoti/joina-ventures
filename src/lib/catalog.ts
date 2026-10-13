@@ -535,6 +535,8 @@ const productImages: Record<string, string> = {
   "mug-sublimation":                "/coke_mug.png",
   "t-shirt-sublimation":            "/Coke_T-Shirt.png",
   "reflector-jacket-sublimation":   "/kenha_jacket.png",
+  "kenyan-flag-sublimation":             "/kenyan_flag.png",
+
 
 };
 
