@@ -523,6 +523,7 @@ const productImages: Record<string, string> = {
   "glass-uv-printing": "/vibrant-uv-rotary-printing-showcase.png",
   "trophy-laser-engraving": "/precision-cnc-engraving-in-action.png",
   "leather-laser-engraving": "/precision-cnc-engraving-in-action.png",
+  // DTF printing
 
     "hoodie-dtf-printing":       "/Hoodie_dtf.png",
     "cap-dtf-printing":          "/cap_dtf.png",
