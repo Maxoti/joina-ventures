@@ -579,6 +579,11 @@ const productImages: Record<string, string> = {
     "brand-identity-design":      "/brand-identity-design.png",
     "print-ready-artwork-setup":  "/print-ready-artwork-setup.jpg",
 
+        // Digital printing
+    "flyers-and-leaflets": "/flyers-and-leaflets.png",
+    "brochures":           "/brochures.png",
+    "business-cards":      "/business-cards.png",
+
  
 };
 
