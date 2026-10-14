@@ -546,7 +546,6 @@ const productImages: Record<string, string> = {
   "t-shirt-sublimation":          "/Coke_T-Shirt.png",
   "reflector-jacket-sublimation": "/kenha_jacket.png",
 
-  // Flags
      // Flags
     "teardrop-flags":        "/smart_teardropflag.png",
     "custom-flags":          "/kenyan_flag.png",
@@ -570,6 +569,11 @@ const productImages: Record<string, string> = {
   "mandarin-collar-t-shirts":       "/custom-chinese-collar-dragon-tee-mockup.png",
   "cycling-jerseys":                "/dynamic-cycling-jersey-mockup-views-1.png",
   "staff-t-shirts":                 "/custom-blue-team-vision-jersey-mockup.png",
+
+      // Heat transfer
+    "heat-pressed-mugs":    "/heat-pressed-mugs.png",
+    "heat-pressed-apparel": "/heat-pressed-apparel.png",
+    "heat-pressed-bottles": "/heat-pressed-bottles.png",
 
  
 };
