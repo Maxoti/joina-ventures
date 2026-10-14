@@ -528,9 +528,12 @@ const productImages: Record<string, string> = {
   // ID cards
   "pvc-id-cards":              "/brightpath-staff-id-badge-mockup.png",
 
-  // Laser engraving
+   // Laser engraving
   "trophy-laser-engraving":    "/precision-cnc-engraving-in-action.png",
-  "leather-laser-engraving":   "/precision-cnc-engraving-in-action.png",
+  "pen-laser-engraving":       "/pen-laser-engraving.png",
+  "notebook-laser-engraving":  "/notebook-laser-engraving.png",
+  "leather-laser-engraving":   "/leather-laser-engraving.png",
+  "wristband-laser-engraving": "/wristband-laser-engraving.png",
 
   // DTF printing
   "hoodie-dtf-printing":           "/Hoodie_dtf.png",
@@ -569,6 +572,8 @@ const productImages: Record<string, string> = {
   "mandarin-collar-t-shirts":       "/custom-chinese-collar-dragon-tee-mockup.png",
   "cycling-jerseys":                "/dynamic-cycling-jersey-mockup-views-1.png",
   "staff-t-shirts":                 "/custom-blue-team-vision-jersey-mockup.png",
+
+ 
 };
 
 export function slugify(input: string): string {
