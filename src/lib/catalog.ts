@@ -519,47 +519,56 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
  * Anything not listed here falls back to its category image.
  */
 const productImages: Record<string, string> = {
-  "water-bottle-uv-printing": "/vibrant-uv-rotary-printing-showcase.png",
-  "glass-uv-printing": "/vibrant-uv-rotary-printing-showcase.png",
-  "trophy-laser-engraving": "/precision-cnc-engraving-in-action.png",
-  "leather-laser-engraving": "/precision-cnc-engraving-in-action.png",
-  // DTF printing
+  // UV printing
+  "water-bottle-uv-printing":  "/vibrant-uv-printed-water-bottles.png",
+  "glass-uv-printing":         "/vibrant-uv-rotary-printing-showcase.png",
+  "golf-ball-uv-printing":     "/custom-uv-printed-golf-balls-on-the-green.png",
+  "phone-case-uv-printing":    "/vibrant-uv-printed-phone-cases.png",
+  "pen-uv-printing":           "/vibrant-uv-printed-promotional-pens.png",
+  "keychain-uv-printing":      "/vibrant-uv-printed-keychains-showcase.png",
 
-    "hoodie-dtf-printing":       "/Hoodie_dtf.png",
-    "cap-dtf-printing":          "/cap_dtf.png",
-  "jute-bag-dtf-printing":     "/Jute_dtf.png",
-  "t-shirt-dtf-printing":      "/Tshirt.png",
-  "tote-bag-dtf-printing":     "/Totebag.png",
+  // ID cards
+  "staff-id-badge-printing":   "/brightpath-staff-id-badge-mockup.png",
+  "student-id-card-printing":  "/student-id-card.jpg",
+
+  // Laser engraving
+  "trophy-laser-engraving":    "/precision-cnc-engraving-in-action.png",
+  "leather-laser-engraving":   "/precision-cnc-engraving-in-action.png",
+
+  // DTF printing
+  "hoodie-dtf-printing":           "/Hoodie_dtf.png",
+  "cap-dtf-printing":              "/cap_dtf.png",
+  "jute-bag-dtf-printing":         "/Jute_dtf.png",
+  "t-shirt-dtf-printing":          "/Tshirt.png",
+  "tote-bag-dtf-printing":         "/Totebag.png",
   "reflector-jacket-dtf-printing": "/Reflector_dtf.png",
 
   // Sublimation
-  "mug-sublimation":                "/coke_mug.png",
-  "t-shirt-sublimation":            "/Coke_T-Shirt.png",
-  "reflector-jacket-sublimation":   "/kenha_jacket.png",
-  "kenyan-flag-sublimation":             "/kenyan_flag.png",
+  "mug-sublimation":              "/coke_mug.png",
+  "t-shirt-sublimation":          "/Coke_T-Shirt.png",
+  "reflector-jacket-sublimation": "/kenha_jacket.png",
+  "kenyan-flag-sublimation":      "/kenyan_flag.png",
 
-    // Flags
-  "teardrop-flags":                "/smart_teardropflag.png",
-  "custom-flags":                  "/kenyan_flag.png",
+  // Flags
+  "teardrop-flags": "/smart_teardropflag.png",
+  "custom-flags":   "/kenyan_flag.png",
 
-// large format
+  // Large format
+  "gazebo-tent-printing":        "/coca-cola-promotional-gazebo-showcase.png",
+  "adjustable-backdrop-banners": "/creativeprints-adjustable-banner-display.png",
+  "roll-up-banners":             "/nexora-roll-up-banner-in-modern-office.png",
+  "x-stand-banners":             "/x-banner.png",
+  "door-frame-stand-banners":    "/modern-kensure-solutions-lobby-banner.png",
+  "l-banner-stands":             "/skyline-properties-lobby-banner.png",
+  "window-graphics":             "/technova-modern-storefront-wrap.png",
 
- "gazebo-tent-printing":          "/coca-cola-promotional-gazebo-showcase.png",
-  "adjustable-backdrop-banners":   "/creativeprints-adjustable-banner-display.png",
-  "roll-up-banners":               "/nexora-roll-up-banner-in-modern-office.png",
-  "x-stand-banners":               "/x-banner.png",
-  "door-frame-stand-banners":      "/modern-kensure-solutions-lobby-banner.png",
-  "l-banner-stands":               "/skyline-properties-lobby-banner.png",
-  "window-graphics":               "/technova-modern-storefront-wrap.png",
-
-  // Custom 3D T-shirts
+  // Custom 3D t-shirts
   "custom-3d-sublimation-t-shirts": "/custom-sublimation-t-shirt.png",
   "biker-club-t-shirts":            "/biker-club-t-shirt.png",
   "mandarin-collar-t-shirts":       "/custom-chinese-collar-dragon-tee-mockup.png",
   "cycling-jerseys":                "/dynamic-cycling-jersey-mockup-views-1.png",
   "staff-t-shirts":                 "/custom-blue-team-vision-jersey-mockup.png",
-  "dance-shirts":              "/vibrant-dance.png",
-
+  "dance-shirts":                   "/vibrant-dance.png",
 };
 
 export function slugify(input: string): string {
