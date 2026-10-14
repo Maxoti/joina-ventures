@@ -441,8 +441,6 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
     ["Telescopic stand flags", "Adjustable-height flags on a stand."],
     ["Tension banner flags", "Flat tension banners for clean, bold graphics."],
     ["S-stand banner flags", "Flags on an S-shaped stand for events."],
-    ["Pop-up stand flags", "Folding flag displays for quick setup."],
-    ["Lantern banner flags", "Distinctive lantern-style banners for outdoor branding."],
   ],
   "laser-engraving": [
     ["Trophy laser engraving", "Names, dates and logos on trophies."],
@@ -548,8 +546,13 @@ const productImages: Record<string, string> = {
   "reflector-jacket-sublimation": "/kenha_jacket.png",
 
   // Flags
-  "teardrop-flags": "/smart_teardropflag.png",
-  "custom-flags":   "/kenyan_flag.png",
+     // Flags
+    "teardrop-flags":        "/smart_teardropflag.png",
+    "custom-flags":          "/kenyan_flag.png",
+    "pin-banner-flags":      "/pin-banner-flags.png",
+    "telescopic-stand-flags": "/telescopic-stand-flags.png",
+    "tension-banner-flags":  "/tension-banner-flags.png",
+    "s-stand-banner-flags":  "/s-stand-banner-flags.png",
 
   // Large format
   "gazebo-tent-printing":        "/coca-cola-promotional-gazebo-showcase.png",
