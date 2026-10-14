@@ -99,13 +99,13 @@ export const categories: Category[] = [
     ink: "cyan",
     image: "/uv-printing.png",
     imageAlt: "UV printing at the Joina Ventures workshop",
-    short: "Sharp, durable prints straight onto bottles, glass, pens, diaries and gifts.",
+    short: "Sharp, durable prints straight onto bottles, glass, pens, phone cases and gifts.",
     intro:
       "UV printing cures ink with ultraviolet light as it is printed, so you get crisp colour and a durable finish directly on the item. There is no sticker layer, which makes it ideal for rigid promotional items and premium corporate gifts.",
-    bestFor: ["Corporate gifts", "Water bottles and glassware", "Diaries and USB flash disks", "Awards"],
+    bestFor: ["Corporate gifts", "Water bottles and glassware", "Phone cases and keychains", "Promotional pens"],
     seoTitle: "UV printing services in Nairobi, Kenya",
     seoDescription:
-      "UV printing on water bottles, glasses, glass awards, diaries, golf balls and USB flash disks in Nairobi. Sharp, durable branding. Request a quote.",
+      "UV printing on water bottles, glasses, phone cases, pens, keychains and golf balls in Nairobi. Sharp, durable branding. Request a quote.",
     faqs: [
       { q: "What can be UV printed?", a: "Most rigid items: bottles, glass, acrylic, metal, wood and many plastics. Send a photo of the item if you are unsure." },
       { q: "Is there a minimum order?", a: "Many UV items can be done in small numbers. Tell us your quantity and we will quote." },
@@ -416,13 +416,13 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
     ["Cycling jerseys", "Custom jerseys for cyclists and cycling clubs."],
     ["Campaign t-shirts", "Bold shirts for campaign teams and supporters."],
   ],
-  "uv-printing": [
+    "uv-printing": [
     ["Water bottle UV printing", "Branded bottles that people keep and use."],
     ["Glass UV printing", "Drinking glasses with a sharp, lasting print."],
-    ["Glass award UV printing", "Full-colour detail on glass awards and plaques."],
-    ["Diary UV printing", "Corporate diaries with your logo on the cover."],
-    ["USB flash disk UV printing", "Branded flash disks for presentations and gifts."],
     ["Golf ball UV printing", "Logo golf balls for tournaments and corporate days."],
+    ["Phone case UV printing", "Custom phone cases with sharp, full-colour prints."],
+    ["Pen UV printing", "Branded promotional pens for events and offices."],
+    ["Keychain UV printing", "Durable printed keychains for gifts and giveaways."],
   ],
   "large-format-printing": [
     ["Roll-up banners", "Portable banners that set up in seconds."],
@@ -528,8 +528,7 @@ const productImages: Record<string, string> = {
   "keychain-uv-printing":      "/vibrant-uv-printed-keychains-showcase.png",
 
   // ID cards
-  "staff-id-badge-printing":   "/brightpath-staff-id-badge-mockup.png",
-  "student-id-card-printing":  "/student-id-card.jpg",
+  "pvc-id-cards":              "/brightpath-staff-id-badge-mockup.png",
 
   // Laser engraving
   "trophy-laser-engraving":    "/precision-cnc-engraving-in-action.png",
@@ -547,7 +546,6 @@ const productImages: Record<string, string> = {
   "mug-sublimation":              "/coke_mug.png",
   "t-shirt-sublimation":          "/Coke_T-Shirt.png",
   "reflector-jacket-sublimation": "/kenha_jacket.png",
-  "kenyan-flag-sublimation":      "/kenyan_flag.png",
 
   // Flags
   "teardrop-flags": "/smart_teardropflag.png",
@@ -568,7 +566,6 @@ const productImages: Record<string, string> = {
   "mandarin-collar-t-shirts":       "/custom-chinese-collar-dragon-tee-mockup.png",
   "cycling-jerseys":                "/dynamic-cycling-jersey-mockup-views-1.png",
   "staff-t-shirts":                 "/custom-blue-team-vision-jersey-mockup.png",
-  "dance-shirts":                   "/vibrant-dance.png",
 };
 
 export function slugify(input: string): string {
