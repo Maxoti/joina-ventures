@@ -574,6 +574,10 @@ const productImages: Record<string, string> = {
     "heat-pressed-mugs":    "/heat-pressed-mugs.png",
     "heat-pressed-apparel": "/heat-pressed-apparel.png",
     "heat-pressed-bottles": "/heat-pressed-bottles.png",
+        // Graphic design
+    "logo-design":                "/logo-design.png",
+    "brand-identity-design":      "/brand-identity-design.png",
+    "print-ready-artwork-setup":  "/print-ready-artwork-setup.jpg",
 
  
 };
