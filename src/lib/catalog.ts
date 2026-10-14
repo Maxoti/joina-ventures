@@ -448,8 +448,6 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
     ["Notebook laser engraving", "Personalised notebook covers."],
     ["Diary laser engraving", "Engraved diaries for staff and clients."],
     ["Leather laser engraving", "Fine detail on wallets, belts and leather items."],
-    ["Key holder laser engraving", "Engraved key holders for gifts and events."],
-    ["Door tag laser engraving", "Room and door tags for hotels and offices."],
     ["Wristband laser engraving", "Engraved wristbands for events and campaigns."],
   ],
   "heat-transfer-printing": [
