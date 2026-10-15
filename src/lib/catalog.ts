@@ -586,7 +586,6 @@ const productImages: Record<string, string> = {
     "brochures":           "/brochures.png",
     "business-cards":      "/business-cards.png",
  
-
     // Offset printing
   "offset-printed-brochures":   "/professional-offset-printing-brochure-display.png",
   "calendars":                  "/greenprint-january-2025-desk-calendar.png",
@@ -595,7 +594,12 @@ const productImages: Record<string, string> = {
   //screen printing
   "campaign-t-shirts":        "/bright-yellow-joina-ventures-t-shirt.png",
   "screen-printed-tote-bags": "/eco-brand-canvas-tote-display.png",
-"screen-printed-jackets":   "/blue-jv-branded-jacket-mockup.png"
+"screen-printed-jackets":   "/blue-jv-branded-jacket-mockup.png",
+
+  // Embroidery
+  "embroidered-polo-shirts": "/white-polo-with-jv-joina-embroidery.png",
+  "embroidered-caps":        "/kensington-agro-solutions-cap.png",
+  "embroidered-uniforms":    "/blue-embroidered-academic-crest.png"
  
 };
 
