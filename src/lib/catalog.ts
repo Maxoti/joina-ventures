@@ -590,6 +590,10 @@ const productImages: Record<string, string> = {
   "calendars":                  "/greenprint-january-2025-desk-calendar.png",
   "receipt-and-invoice-books":  "/professional-invoice-book-stationery.png",
 
+  //screen printing
+  "campaign-t-shirts":        "/bright-yellow-joina-ventures-t-shirt.png",
+  "screen-printed-tote-bags": "/eco-brand-canvas-tote-display.png",
+  "embroidered-uniforms":     "/blue-jv-branded-jacket-mockup.png",
 
  
 };
