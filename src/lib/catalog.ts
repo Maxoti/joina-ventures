@@ -599,8 +599,10 @@ const productImages: Record<string, string> = {
   // Embroidery
   "embroidered-polo-shirts": "/white-polo-with-jv-joina-embroidery.png",
   "embroidered-caps":        "/kensington-agro-solutions-cap.png",
-  "embroidered-uniforms":    "/blue-embroidered-academic-crest.png"
- 
+  "embroidered-uniforms":    "/blue-embroidered-academic-crest.png",
+   // Vinyl stickers
+  "custom-vinyl-stickers":  "/glossy-custom-sticker-collection.png",
+  "die-cut-vinyl-stickers": "/brightprint-solutions-sticker.png",
 };
 
 export function slugify(input: string): string {
