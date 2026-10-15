@@ -583,6 +583,13 @@ const productImages: Record<string, string> = {
     "flyers-and-leaflets": "/flyers-and-leaflets.png",
     "brochures":           "/brochures.png",
     "business-cards":      "/business-cards.png",
+ 
+
+    // Offset printing
+  "offset-printed-brochures":   "/professional-offset-printing-brochure-display.png",
+  "calendars":                  "/greenprint-january-2025-desk-calendar.png",
+  "receipt-and-invoice-books":  "/professional-invoice-book-stationery.png",
+
 
  
 };
