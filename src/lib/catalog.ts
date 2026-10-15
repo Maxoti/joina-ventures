@@ -601,10 +601,15 @@ const productImages: Record<string, string> = {
   "embroidered-polo-shirts": "/white-polo-with-jv-joina-embroidery.png",
   "embroidered-caps":        "/kensington-agro-solutions-cap.png",
   "embroidered-uniforms":    "/blue-embroidered-academic-crest.png",
-   // Vinyl stickers
+    // Vinyl stickers
   "custom-vinyl-stickers":  "/glossy-custom-sticker-collection.png",
   "die-cut-vinyl-stickers": "/brightprint-solutions-sticker.png",
-    "uv-dtf-logo-stickers": "/sunlit-green-leaves-sticker.png",
+
+  // UV DTF stickers
+  "uv-dtf-transfer-stickers":              "/greenlife-organic-sticker-jar-mockup.png",
+  "uv-dtf-stickers-for-bottles-and-glass": "/pure-water-uv-dtf-bottle-sticker-mockup.png",
+  "uv-dtf-logo-stickers":                  "/sunlit-green-leaves-sticker.png",
+  
 
 
 };
