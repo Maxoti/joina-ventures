@@ -519,7 +519,7 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
  */
 const productImages: Record<string, string> = {
   // UV printing
-  "water-bottle-uv-printing":  "/vibrant-uv-printed-water-bottles.png",
+  "water-bottle-uv-printing":  "/compact-pure-water-bottle.png",
   "glass-uv-printing":         "/vibrant-uv-rotary-printing-showcase.png",
   "golf-ball-uv-printing":     "/custom-uv-printed-golf-balls-on-the-green.png",
   "phone-case-uv-printing":    "/vibrant-uv-printed-phone-cases.png",
@@ -610,8 +610,8 @@ const productImages: Record<string, string> = {
   "uv-dtf-stickers-for-bottles-and-glass": "/pure-water-uv-dtf-bottle-sticker-mockup.png",
   "uv-dtf-logo-stickers":                  "/sunlit-green-leaves-sticker.png",
 
-    // UV rotary printing
-  "rotary-uv-printing-on-bottles":  "/pure-water-bottle-design.png",
+     // UV rotary printing
+  "rotary-uv-printing-on-bottles":  "/compact-pure-water-bottle.png",
   "rotary-uv-printing-on-tumblers": "/summit-outdoors-tumbler-mockup.png",
   
 
