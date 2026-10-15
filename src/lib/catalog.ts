@@ -488,6 +488,7 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
   "uv-dtf-stickers": [
     ["UV DTF transfer stickers", "Tough, glossy transfers for rigid surfaces."],
     ["UV DTF stickers for bottles and glass", "Durable branding for drinkware and glass items."],
+    ["UV DTF logo stickers", "Small glossy logo transfers for products and packaging."],
   ],
   "uv-rotary-printing": [
     ["Rotary UV printing on bottles", "Wrap-around prints on water bottles."],
@@ -603,6 +604,9 @@ const productImages: Record<string, string> = {
    // Vinyl stickers
   "custom-vinyl-stickers":  "/glossy-custom-sticker-collection.png",
   "die-cut-vinyl-stickers": "/brightprint-solutions-sticker.png",
+    "uv-dtf-logo-stickers": "/sunlit-green-leaves-sticker.png",
+
+
 };
 
 export function slugify(input: string): string {
