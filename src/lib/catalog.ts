@@ -470,10 +470,12 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
     ["Calendars", "Wall and desk calendars printed in bulk."],
     ["Receipt and invoice books", "Numbered, carbonless books for your business."],
   ],
-  "screen-printing": [
+    "screen-printing": [
     ["Screen printed t-shirts", "Bold, hard-wearing logo prints for bulk orders."],
     ["Screen printed tote bags", "Simple branded totes in larger batches."],
+    ["Screen printed jackets", "Branded jackets for teams, staff and events."],
   ],
+
   "embroidery": [
     ["Embroidered polo shirts", "Stitched logos on corporate polos."],
     ["Embroidered caps", "Neat embroidered branding on caps."],
@@ -593,8 +595,7 @@ const productImages: Record<string, string> = {
   //screen printing
   "campaign-t-shirts":        "/bright-yellow-joina-ventures-t-shirt.png",
   "screen-printed-tote-bags": "/eco-brand-canvas-tote-display.png",
-  "embroidered-uniforms":     "/blue-jv-branded-jacket-mockup.png",
-
+"screen-printed-jackets":   "/blue-jv-branded-jacket-mockup.png"
  
 };
 
