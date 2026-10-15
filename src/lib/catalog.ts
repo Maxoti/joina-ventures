@@ -494,9 +494,11 @@ const rawProducts: Record<string, [name: string, blurb: string][]> = {
     ["Rotary UV printing on bottles", "Wrap-around prints on water bottles."],
     ["Rotary UV printing on tumblers", "Full-colour branding on tumblers and cups."],
   ],
-  "doming": [
+    "doming": [
     ["Doming stickers", "Clear raised resin over printed stickers."],
     ["Domed logo badges", "Premium 3D logo badges for products and gear."],
+    ["Domed keychains", "Glossy resin-coated keychains with your logo."],
+    ["Branded desk collection", "Domed logo accessories for offices and corporate gifts."],
   ],
   "cnc-engraving": [
     ["CNC wood engraving", "Carved lettering and designs in wood."],
@@ -613,6 +615,12 @@ const productImages: Record<string, string> = {
      // UV rotary printing
   "rotary-uv-printing-on-bottles":  "/compact-pure-water-bottle.png",
   "rotary-uv-printing-on-tumblers": "/summit-outdoors-tumbler-mockup.png",
+
+    // Doming
+  "doming-stickers":         "/premium-gold-edged-sticker-seal.png",
+  "domed-logo-badges":       "/glossy-green-sprite-badge.png",
+  "domed-keychains":         "/explore-keychains-on-marble-tabletop.png",
+  "branded-desk-collection": "/joina-ventures-branded-desk-collection.png",
   
 
 
