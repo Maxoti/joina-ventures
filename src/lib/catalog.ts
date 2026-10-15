@@ -609,6 +609,10 @@ const productImages: Record<string, string> = {
   "uv-dtf-transfer-stickers":              "/greenlife-organic-sticker-jar-mockup.png",
   "uv-dtf-stickers-for-bottles-and-glass": "/pure-water-uv-dtf-bottle-sticker-mockup.png",
   "uv-dtf-logo-stickers":                  "/sunlit-green-leaves-sticker.png",
+
+    // UV rotary printing
+  "rotary-uv-printing-on-bottles":  "/pure-water-bottle-design.png",
+  "rotary-uv-printing-on-tumblers": "/summit-outdoors-tumbler-mockup.png",
   
 
 
