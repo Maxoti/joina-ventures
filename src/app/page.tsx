@@ -57,10 +57,10 @@ export default function HomePage() {
 
           <Image
             className="hero-image"
-            src="/Design-Triangle.png"
-            alt="Joina Ventures services: design for logos and branding, high quality printing on banners and t-shirts, and branded merchandise such as bags, caps, mugs and notebooks"
-            width={2262}
-            height={1272}
+            src="/joina-print-brand-pyramid.png"
+            alt="Joina Ventures: custom printing and branding in Nairobi. Design, print and brand, from business cards and banners to t-shirts, caps, mugs, bags and bottles."
+            width={1470}
+            height={1070}
             quality={90}
             priority
             sizes="(max-width: 1180px) 100vw, 1180px"
