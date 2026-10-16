@@ -3,10 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Looping product slideshow for the hero (compressed video, about 250 KB).
- * - Normal devices: plays automatically, with a pause button.
- * - Devices set to "reduce motion": shows a still frame with a play button,
- *   so the visitor decides whether to start it.
+ * Hero logo animation (3 seconds, about 58 KB).
+ * - Normal devices: plays once automatically and rests on the final logo frame.
+ *   The button then becomes "Replay".
+ * - Devices set to "reduce motion": shows the still logo frame with a play
+ *   button, so the visitor decides whether to start it.
  */
 export function HeroMotion() {
   const ref = useRef<HTMLVideoElement>(null);
@@ -20,8 +21,10 @@ export function HeroMotion() {
 
     const onPlay = () => setPlaying(true);
     const onPause = () => setPlaying(false);
+    const onEnded = () => setPlaying(false);
     video.addEventListener("play", onPlay);
     video.addEventListener("pause", onPause);
+    video.addEventListener("ended", onEnded);
 
     const query = window.matchMedia("(prefers-reduced-motion: reduce)");
     const apply = () => {
@@ -40,6 +43,7 @@ export function HeroMotion() {
       query.removeEventListener("change", apply);
       video.removeEventListener("play", onPlay);
       video.removeEventListener("pause", onPause);
+      video.removeEventListener("ended", onEnded);
     };
   }, []);
 
@@ -47,6 +51,7 @@ export function HeroMotion() {
     const video = ref.current;
     if (!video) return;
     userChose.current = true;
+    if (video.ended) video.currentTime = 0; // replay from the start
     if (video.paused) video.play().catch(() => {});
     else video.pause();
   }
@@ -56,16 +61,15 @@ export function HeroMotion() {
       <video
         ref={ref}
         muted
-        loop
         playsInline
         preload="auto"
-        width={1200}
-        height={1200}
-        poster="/hero-motion-poster.webp"
-        aria-label="Joina Ventures branded t-shirts, mugs, banners and business cards"
+        width={1280}
+        height={720}
+        poster="/joina-logo-intro-poster.webp"
+        aria-label="Joina Ventures logo animation"
       >
-        <source src="/hero-motion.webm" type="video/webm" />
-        <source src="/hero-motion.mp4" type="video/mp4" />
+        <source src="/joina-logo-intro.webm" type="video/webm" />
+        <source src="/joina-logo-intro.mp4" type="video/mp4" />
       </video>
       <button
         type="button"
