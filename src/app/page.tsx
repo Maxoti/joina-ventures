@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import { HeroMotion } from "@/components/HeroMotion";
+import { Hero } from "@/components/Hero";
 import { ProductCard } from "@/components/ProductCard";
 import { ServiceList } from "@/components/ServiceList";
 import { categories, featuredSlugs, getProduct, productsIn, type Product } from "@/lib/catalog";
@@ -35,38 +34,7 @@ export default function HomePage() {
         }}
       />
 
-      <section className="hero">
-        <div className="container">
-          <div className="hero-top">
-            <div className="hero-copy">
-              <h1>Your brand, printed properly.</h1>
-              <p className="lede">
-                T-shirts, banners, flags, mugs, awards and branded gifts. Tell us what you need and we will send a quote on WhatsApp.
-              </p>
-              <div className="hero-cta">
-                <Link href="/quote" className="btn primary">
-                  Get a quote
-                </Link>
-                <Link href="/products" className="btn ghost">
-                  Browse products
-                </Link>
-              </div>
-            </div>
-            <HeroMotion />
-          </div>
-
-          <Image
-            className="hero-image"
-            src="/joina-print-brand-pyramid.png"
-            alt="Joina Ventures: custom printing and branding in Nairobi. Design, print and brand, from business cards and banners to t-shirts, caps, mugs, bags and bottles."
-            width={1470}
-            height={1070}
-            quality={90}
-            priority
-            sizes="(max-width: 1180px) 100vw, 1180px"
-          />
-        </div>
-      </section>
+      <Hero />
 
       <section className="section" aria-labelledby="services-h">
         <div className="container">
