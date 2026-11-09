@@ -10,7 +10,7 @@ const page = `<!doctype html>
 
 export function proxy(request: NextRequest) {
   void request;
-  if (process.env.MAINTENANCE_MODE !== "true") return NextResponse.next();
+  if (process.env.MAINTENANCE_MODE !== "false") return NextResponse.next();
 
   return new NextResponse(page, {
     status: 503,
