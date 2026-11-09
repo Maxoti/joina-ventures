@@ -17,9 +17,8 @@
   --wa: #0f7f42;
 
   --radius: 6px;
-  --max: 1180px;
-  --gutter: clamp(18px, 4vw, 40px);
-
+  --max: 1680px;
+  --gutter: clamp(18px, 4vw, 72px);
   --font-display: var(--font-bricolage), "Segoe UI", system-ui, sans-serif;
 }
 
@@ -346,4 +345,9 @@ input[type="radio"] { width: 18px; height: 18px; accent-color: var(--magenta); }
 @media (max-width: 480px) {
   .pager { gap: 6px; }
   .pager-step { padding: 0 12px; }
+}
+@media (min-width: 1280px) {
+  .service-row a { grid-template-columns: 168px minmax(0, 1fr) minmax(0, 1.5fr) auto; }
+  .service-thumb { width: 168px; height: 112px; }
+  .product-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }
