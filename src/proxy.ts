@@ -1,5 +1,12 @@
 import { NextResponse } from "next/server";
 
+// ──────────────────────────────────────────────
+// MAINTENANCE SWITCH: change this one word, then commit and push.
+//   true  = visitors see the "Temporarily unavailable" page
+//   false = the site works normally
+// ──────────────────────────────────────────────
+const MAINTENANCE_MODE = true;
+
 const page = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,13 +15,8 @@ const page = `<!doctype html>
 <style>body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif;color:#183848;text-align:center;padding:24px}</style>
 </head><body><main><h1>Temporarily unavailable</h1><p>We will be back soon.</p></main></body></html>`;
 
-// Maintenance mode is ON only when MAINTENANCE_MODE is "true".
-// Unset, "false" or anything else means the site is open.
-const isMaintenanceMode = () =>
-  process.env.MAINTENANCE_MODE?.trim().toLowerCase() === "true";
-
 export function proxy() {
-  if (!isMaintenanceMode()) return NextResponse.next();
+  if (!MAINTENANCE_MODE) return NextResponse.next();
 
   return new NextResponse(page, {
     status: 503,
